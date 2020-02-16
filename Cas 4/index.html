@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Food Restaurant</title>
+		
+		<style>
+			
+			header {
+				background-color: #FFC107;
+				color: white;
+			}
+
+			#gallery {
+				margin: 50px;
+			}			
+
+			div {
+				margin: 20px;						
+			}
+
+			.container {
+				margin: 5px;
+			}
+
+			section.container {
+				margin: 10px;
+			}
+
+			div#gallery {
+				margin: 25px;
+			}
+
+			#logo {
+				width: 100px;
+			}
+
+			/*div#gallery img {
+				width: 150px;
+			}*/
+
+			div#gallery > img {
+				width: 150px;
+			}
+
+			div#gallery > span > img {
+				width: 200px;
+			}
+
+			nav table {
+				width: 100%;
+			}
+
+			div, span {
+				background-color: #FF00FF;
+			}
+
+			#table-2 tr td:first-child {
+				padding: 10px;
+			}
+
+			#table-2 tr td:last-child {
+				padding: 10px;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<header>
+			
+			<!-- <h2 style="color: black">Heading 2</h2> -->
+
+			<table>
+				<tr>
+					<!-- attribute style="width: 100px;" -->
+					<td><img id="logo" src="logo.webp"></td>
+					<td><h1>Food Restaurant</h1></td>	
+				</tr>
+			</table>
+
+		</header>
+
+		<nav>
+			
+			<table id="table-2" border="1">
+				<tr>
+					<td align="center"><a href="index.html">Homepage</a></td>
+					<td align="center"><a href="about.html">About</a></td>
+					<td align="center"><a href="contact.html">Contact</a></td>
+				</tr>
+			</table>
+
+		</nav>
+
+		<section class="container">
+			
+			<div id="gallery" class="container">
+				
+				<img src="gallery/image1.jpg">							
+				<img src="gallery/image2.jpg">							
+				<img src="gallery/image3.jpg">		
+				<img src="gallery/image4.jpg">
+
+				<span>
+					<img src="gallery/image5.jpg">
+				</span>					
+
+			</div>	
+
+			<div id="general">
+				
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+
+			</div>
+
+			<div class="container">
+				
+			</div>		
+			
+		</section>
+
+	</body>
+
+</html>
