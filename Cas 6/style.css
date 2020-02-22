@@ -3,6 +3,15 @@
 	padding: 0;
 }
 
+.clearfix {
+	clear: both;
+}
+
+/*
+	inherit - nasleduva od parent element
+	unset - go brise konkretnoto property
+*/
+
 body {
 	/*background-color: blue;*/
 	/*background-image: url('background.jpg');*/
@@ -53,11 +62,14 @@ body {
 }
 
 .container {
+	color: white;
 	float: left;
 	width: 50%;
 	height: 100px;	
 	/*border: 1px solid black;*/
 	/*padding: 10px;*/
+	box-sizing: border-box;
+
 }
 
 .cont-1 {
@@ -68,33 +80,74 @@ body {
 	background-color: red;
 }
 
-.paragraphs {	
+.text {
+	margin-top: 20px;
 	width: 50%;
-	margin: 50px auto 0 auto;	
+	margin-right: auto;
+	margin-left: auto;
+	overflow: scroll;
+	/* overflow-x, overflox-y - visible, scroll, hidden */
+
 }
 
-.paragraphs .first-p {
-	background-color: teal;
-	min-width: 250px;
-	padding: 10px;
-	color: white;
-	line-height: 10px;
-	word-spacing: 1em;
-}
-
-.paragraphs .second-p {
+.text .p-one {
 	background-color: yellowgreen;
+	min-width: 350px;	
+}
+
+.text .p-two {
+	background-color: cyan;	
+}
+
+/*.p-one, .p-two {
 	padding: 10px;
+}*/
+
+.text p {
+	padding: 10px;
+	text-align: center;
+    text-indent: 2em;
+    text-decoration: underline;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+    text-shadow: 1px 1px 6px blue;
+    font-family: Arial, Times New Roman, serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #FF9800;
+}
+
+a:active {
+	color: red;
+}
+
+a:hover {
+	color: green;
+}
+
+.btn {
+	background-color: black;
+    color: white;
+    font-family: cursive;
+    padding: 2px;
+    border: unset;
+}
+
+.btn:hover {
+	background-color: red;
+	color: black;
+	cursor: crosshair;
 }
 
 ul {
-	display: inline-block;
-    width: 25%;
-    text-align: center;
-    color: white;
-    background-color: #c5c5c5;
+	list-style-type: lower-greek;
+	list-style-position: outside;
+	/* list-style-image: url('tick.png'); */
 }
 
-ul li {
-	padding: 10px;
-}
