@@ -67,34 +67,3 @@ body {
 .cont-2 {
 	background-color: red;
 }
-
-.paragraphs {	
-	width: 50%;
-	margin: 50px auto 0 auto;	
-}
-
-.paragraphs .first-p {
-	background-color: teal;
-	min-width: 250px;
-	padding: 10px;
-	color: white;
-	line-height: 10px;
-	word-spacing: 1em;
-}
-
-.paragraphs .second-p {
-	background-color: yellowgreen;
-	padding: 10px;
-}
-
-ul {
-	display: inline-block;
-    width: 25%;
-    text-align: center;
-    color: white;
-    background-color: #c5c5c5;
-}
-
-ul li {
-	padding: 10px;
-}
