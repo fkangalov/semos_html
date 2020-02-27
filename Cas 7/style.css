@@ -1,0 +1,57 @@
+[id] {
+	width: 100px;
+}
+/* vrednosta e tocno '20' */
+[size="20"] {
+	width: 250px;
+}
+/* Pocnuva so odreden tekst 'cls' */
+[class^="cls"] {
+	color: blue;
+}
+/* Go sodrzi tekstot 'cls' */
+[class*="cls"] {
+	width: 300px;
+}
+
+/* Zavrsuva so 'cls' */
+[class$="cls"] {
+	width: 250px;
+}
+
+/* Go sodrzi zborot 'cls' bez dopolnitelni znaci */
+[class~="cls"] {
+	width: 100px;
+}
+/* Pocnuva so zborot 'cls' */
+[class|="cls"] {
+	width: 100px;
+}
+
+/* Psevdo elementi */
+[for="username"]::after {
+	content: "*";
+	color: red;
+}
+
+/*input[type="submit"] {
+	
+}*/
+
+/*label[for="submit"]::before {
+	content: "Click here to submit";
+}*/
+
+label::before {
+	content: attr(data-before);
+}
+
+::selection {
+	background-color: yellow;
+	color: red;
+}
+
+h3::selection {
+	background-color: black;
+	color: grey;
+}
