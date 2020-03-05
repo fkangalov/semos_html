@@ -1,0 +1,56 @@
+.container {
+	width: 200px;
+	height: 100px;
+	background-color: blue;
+	transform: rotateZ(0deg) scale(0.1) translateX(0);
+	/*transition-property: width, background-color;*/
+	transition-property: all;
+	transition-duration: 500ms;
+	transition-delay: 0ms;
+	transition-timing-function: ease;
+
+	/*transition: all 500ms 0ms ease;*/
+
+}
+
+.container:hover {
+	/*width: 500px;*/
+	background-color: green;
+	transform: rotateZ(360deg) scale(1) translateX(100px);
+}
+
+
+img {
+	filter: grayscale(100%);
+	transition: filter 300ms ease-in-out;
+}
+
+img:hover {
+	filter: grayscale(0%);
+}
+
+.animacija {
+	animation-name: moja;
+	animation-direction: normal;
+	animation-delay: 0ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	/*animation-iteration-count: infinite;*/
+	animation-iteration-count: 2;
+	animation-duration: 3s;
+}
+
+
+@keyframes moja {
+	0%, 50% {
+		transform: rotateZ(0deg);
+	}
+
+	70% {
+		transform: rotateZ(90deg);
+	}
+
+	100% {
+		transform: rotateZ(180deg);
+	}
+}
