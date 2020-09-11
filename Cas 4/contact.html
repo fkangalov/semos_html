@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <title>Cas 3</title>
+    </head>
+
+    <body>
+        
+        <header>
+            <img src="./assets/images/logo.png" alt="Logo here" width="10%">
+            
+            <nav>
+
+                <table border="1" width="100%">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Semos Restaurant</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="center"><a href="index.html">Home</a></td>
+                            <td align="center"><a href="gallery.html">Gallery</a></td>
+                            <td align="center"><a href="contact.html">Contact</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </nav>
+
+        </header>
+
+        <section>
+
+            <!-- Contact Form -->
+            <form action="" method="GET">
+                
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" size="30" placeholder="Enter your username here.." value="semos" required autofocus> <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" size="30" placeholder="Enter your email here.." required> <br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" size="30" placeholder="Enter your password here.." required maxlength="10" minlength="5"> <br>
+
+                <input type="number" size="30" placeholder="Type a number.." max="10" min="0"> <br>
+                <input type="file" disabled> <br>
+                
+                <label> <input type="checkbox" checked> Ketchup </label> <br> 
+                <label> <input type="checkbox"> Mayonnaise </label> <br>
+
+                <label> <input type="radio" name="fries_size" value="small"> Small </label> <br>
+                <label> <input type="radio" name="fries_size" value="medium"> Medium </label> <br>
+                <label> <input type="radio" name="fries_size" value="large"> Large </label> <br>
+
+                <label for="city">Choose a city:</label>
+                <select id="city" name="city">
+                    <option value='skopje'>Skopje</option>
+                    <option value='shtip'>Shtip</option>
+                    <option value='ohrid' selected>Ohrid</option>
+                </select>
+
+                <textarea rows="10" cols="10" name="message" id="message">
+                    
+                </textarea>
+
+                <input type="color" name="color" id="color">
+
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+
+        </section>
+
+        <iframe src="gallery.html" frameborder="0">
+
+        </iframe>
+
+
+
+        <footer>
+            
+            <h2 style="color: aquamarine;">Sample text</h2>
+
+        </footer>
+
+    </body>
+
+</html>
