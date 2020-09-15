@@ -1,0 +1,59 @@
+body {
+    /* background-color: hotpink; */
+    background-image: url("../images/logo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center left; /* top, bottom, right - moze da se kombiniraat */ 
+    
+    /* background: url("../images/logo.jpg") no-repeat fixed center left; */
+    height: 5000px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.par {
+
+    /* border-width: 2px;
+    border-style: dashed;
+    border-color: black;
+
+    border-right-color: red;
+    border-left-width: 5px; */
+
+    border: 2px dashed black;
+
+}
+
+div.container-1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+    /* margin: 10px 10px;  gore/dole levo/desno */
+    /* margin: 10px 10px 10px 10px; gore desno dole levo */
+    /* margin: 10px; site strani */
+
+    padding: 10px;
+
+}
+
+div.container-2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+div.container-3 {
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+
+    border: 2px solid black;
+}

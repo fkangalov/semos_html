@@ -1,0 +1,39 @@
+ol.list > li:first-child {
+    color: red;
+}
+
+ol.list > li:last-child {
+    color: blue;
+}
+
+ul.list-2 > li:nth-child(3) {
+    color: red;
+}
+
+ul.list-2 > li:nth-child(4n) {
+    color: green;
+}
+
+/* even, odd */
+ul.list-2 > li:nth-child(even) {
+    color: yellow;
+}
+
+div.container > div:not(.cont-1) {
+    color: blue;
+}
+
+div.hover-container {
+    width: 25%;
+    height: 100px;
+    background-color: greenyellow;
+}
+
+div.hover-container:hover {
+    width: 50%;
+    background-color: hotpink;
+}
+
+input[type="checkbox"]:checked ~ span {
+    background-color: blue;
+}
