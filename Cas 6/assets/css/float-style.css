@@ -1,0 +1,33 @@
+.clearfix {
+    clear: both;
+}
+
+.cont {
+    width: 100px;
+    height: 100px;
+}
+
+.div-1 {
+    background-color: blue;
+    float: left;
+}
+
+.div-2 {
+    background-color: red;
+    float: left;
+}
+
+.div-3 {
+    background-color: yellow;
+    float: left;
+    clear: left;
+}
+
+.div-4 {
+    background-color: green;
+    float: left;
+}
+
+.div-5 {
+    background-color: orange;
+}
