@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 2000px;
+}
+
+.parent {
+    background-color: lightblue;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    margin: 25px;
+    height: 1000px;
+}
+
+.child-1 {
+    background-color: lightcoral;
+    /* position: relative; */
+    /* top: 10px;
+    left: 5px;
+    bottom: 0;
+    right: 0; */
+
+    position: absolute;
+    top: -10px;
+    right: -23px;
+
+
+}
+
+.child-2 {
+    background-color: lightgreen;
+    position: fixed;
+    top: 0;
+}
+
+.child-3 {
+    background-color: mediumpurple;
+    position: sticky;
+    top: 0;
+}
