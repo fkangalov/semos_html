@@ -1,0 +1,22 @@
+grid-template-rows: (repeat) fr px
+grid-template-columns:
+grid-auto-rows: minmax(width, height) auto
+
+grid-column-gap:
+grid-row-gap:
+grid-gap: 
+
+grid-column-start: 1
+grid-column-end: -1
+grid-column: 1 / -1
+
+grid-row-start: 
+grid-row-end: 
+grid-row: 1 / 2
+
+justify-content
+justify-items
+align-content
+align-items
+
+align-self

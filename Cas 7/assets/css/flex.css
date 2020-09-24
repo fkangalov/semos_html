@@ -15,7 +15,6 @@ span {
     visibility: hidden;
 } */
 
-
 .main-container {
     display: flex;
     background-color: #b9b9b9;
@@ -27,18 +26,17 @@ span {
     flex-direction: column-reverse; */
 
     /* se odnesuva na glavnata oska */
-    justify-content: space-around;
-    justify-content: space-between;
+    /* justify-content: space-around;
+    justify-content: space-between; */
     justify-content: space-evenly;
-    justify-content: center;
+    /* justify-content: center;
     justify-content: flex-start;
-    justify-content: flex-end;
+    justify-content: flex-end; */
 
-    /* align-items:  */
-    /* flex-wrap: ; */
-
-
-
+    align-items: start;
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap;
+    flex-wrap: wrap-reverse;  */
 }
 
 .flex-item {
@@ -47,14 +45,38 @@ span {
     margin: 10px;
 }
 
+.main-container > .flex-item:nth-child(even) {
+    align-self: flex-end;
+}
+
+
 .child-1 {
-    width: 15%;
+    flex-basis: 15%;    
 }
 
 .child-2 {
-    width: 15%;
+    flex-basis: 15%;
+    /*
+    Ako izleze textot nadvor od parent elementot moze da se koristi overflow
+    height: 100px;
+    overflow: hidden, scroll, visible
+    overflow-x
+    overflow-y 
+    */
 }
 
 .child-3 {
-    width: 25%;
+    flex-basis: 25%;
+}
+
+.child-4 {
+    flex-basis: 10%;
+}
+
+.child-5 {
+    flex-basis: 15%;
+}
+
+.child-6 {
+    flex-basis: 15%;
 }
