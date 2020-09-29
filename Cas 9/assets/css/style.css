@@ -1,0 +1,46 @@
+body {
+    height: 2000px;
+}
+
+#head-image {
+    width: 500px;
+    opacity: 0.5;
+}
+
+.flex {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    background-color: rgb(253, 210, 154);
+
+    /* translate X i Y oska */
+    /* transform: translate(5px, 5px); */
+    /* transform: scale(1);  1 e inicijalno 2 e duplo itn. */
+    /* transform: rotate(90deg); ritacuha za 90 stepeni */ 
+    /* rotateZ rotateY rotateX */
+}
+
+.flex-item {
+    border: 1px solid red;
+    background-color: rgb(255, 170, 170);
+}
+
+@media screen and (max-width: 500px) {
+
+    .flex {        
+        flex-direction: column;
+        /* background-color: white; */
+    }
+
+    #head-image {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+
+    .flex-item {
+        margin: 7px;
+    }
+
+}
