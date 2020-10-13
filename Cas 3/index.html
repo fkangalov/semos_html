@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cas 3</title>
+    </head>
+    <body>
+        <!-- 
+            GET - se gleda vo browser (vo linkot) - postoi granica 
+            POST - skrien nacin na isprakanje informacii od forma
+         -->
+        <form method="GET" action="">
+
+            <!-- id e za label, name e za server -->
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" placeholder="Ex: semosedu_user" value="Semos" required size="50" readonly> <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="test@semos.mk" required autofocus> <br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" minlength="7" required> <br>
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="18" max="70" step=".5" required disabled> <br>
+
+            <input type="hidden" name="hidden" value="registracija">
+            
+            <label for="color">Choose Color:</label>
+            <input type="color" name="color" id="color"> <br>
+
+            <label>Gender:</label> <br>
+            <label> <input type="radio" name="gender" value="Male"> Male </label> <br>
+            <label> <input type="radio" name="gender" value="Female"> Female </label> <br>
+
+            <label>
+                <input type="checkbox" name="checkbox[]" value="check_1"> Check 1
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="checkbox[]" value="check_2"> Check 2
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="checkbox[]" value="check_3"> Check 3
+            </label>
+            <br>
+
+            <label for="city">City:</label>
+            <select name="city" id="city">
+                <option value="Skopje">Skopje</option>
+                <option value="Bitola">Bitola</option>
+                <option value="Ohrid">Ohrid</option>
+                <option value="Delcevo">Delcevo</option>
+            </select> <br>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Say something about you" rows="10" cols="20"></textarea> <br>
+
+            <label for="image" style="color: #FF00FF">Your image:</label>
+            <input type="file" name="image" id="image" accept="image/*"> <br>
+
+            <input type="submit" name="submit" id="submit" value="Register">
+            
+        </form>
+
+        <iframe src="iframe.html" width="100%"></iframe>
+
+    </body>
+</html>
