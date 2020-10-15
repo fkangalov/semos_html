@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cas 4</title>
+        <style>
+            /* (0, 0, 1) */
+            body {
+                background: #F0F0F0;
+            }
+            /* (0, 0, 1) */
+            p {
+                color: greenyellow;
+            }            
+            /* (0, 1, 0) */
+            .text {
+                color: aqua;
+            }
+            /* (1, 0, 0) */
+            #text {
+                color: chocolate;
+            }
+
+            .main-text {
+                color: greenyellow;
+            }
+
+            #main-container {
+                color: blue;
+            }
+
+            .bg-red {
+                background: red;
+            }
+
+            /* (1, 0, 1) */
+            #main-container div {
+                color: rgb(97, 184, 255);
+            }
+
+            /* (1, 0, 1) */
+            #main-container > div {
+                color: rgb(5, 96, 170);
+            }
+
+            /* (1, 0, 0) */
+            #text {
+                color: red;
+            }
+            /* (0, 1, 0) */
+            .cont-1 {
+                background: rgb(118, 253, 185);
+            }
+
+            /* (1, 1, 1) */
+            #main-container div.cont-1 {
+                background: rgb(74, 255, 29);
+            }
+
+            p,div {
+                margin: 5px;
+            }
+
+            /* (0, 1, 3) */
+            body div div.cont-2 {
+                background: black;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p class="text" id="text" name="text">Hello World</p>
+        <p class="main-text bg-red">Hello World</p>
+
+        <div id="main-container">
+            <div class="cont-1">
+                Sample Text 1
+                <div>Sample Text 1.1</div>
+                <div class="cont-1">Sample Text 1.2</div>
+            </div>
+            <div class="cont-2">Sample Text 2</div>
+            <span>This is a span</span>
+        </div>
+
+        <div class="cont-1 cont-2">
+            Sample Text
+        </div>
+
+        <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorum voluptatum, odio accusamus aliquid, suscipit ad recusandae voluptatem hic tempore ipsum est, cupiditate quidem quae quibusdam doloremque ut illum voluptas!</p>
+
+    </body>
+</html>

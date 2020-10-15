@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cas 4 - strana 2</title>
+
+        <style>
+            [type] {
+                background: cornflowerblue;
+            }
+
+            input[type="text"] {
+                background: darkkhaki;
+            }
+
+            /* Pocnuva na ^= */
+            input[type^="t"] {
+                background: darkkhaki;
+            }
+
+            /* Sodrzi *= */
+            input[type*="t"] {
+                background: green;
+            }           
+
+
+            ul.list li:first-child {
+                color: darkmagenta;
+            }
+
+            ul.list li:last-child {
+                color: darkorange;
+            }
+
+            /* (0, 2, 2) */
+            ul.list li:nth-child(2) {
+                color: darkorchid;
+            }
+
+            ul.list li:nth-child(odd) {
+                color: deeppink;
+            }
+
+            /* (0, 2, 2) */
+            ul.list li:nth-child(even) {
+                color: rgb(33, 252, 25);
+            }
+
+            ul.list li:nth-child(3n + 1) {
+                color: rgb(0, 0, 0);
+            }
+
+            input[type="submit"] {
+                background-color: grey;
+            }
+
+            input[type="submit"]:hover {
+                background-color: red;
+            }
+
+            input[type="email"]:invalid {
+                background-color: red;
+            }
+
+            #website:visited {
+                color:rgba(252, 52, 225);
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <form>
+            <input type="text" size="20" placeholder="First Name"> <br>
+            <input type="email" size="20" placeholder="Email"> <br>
+            <input type="password" size="20" required placeholder="Password"> <br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <ul class="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+        </ul>
+
+        <a href="http://google.com" id="website">Google Link</a>
+
+
+    </body>
+</html>
