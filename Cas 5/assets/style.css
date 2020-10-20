@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: black; */
+    /* background-image: url("./img/tree.webp"); */
+    /* background-repeat: repeat; */
+    /* background-repeat-x: repeat;
+    background-repeat-y: no-repeat; */
+    /* background-position: top center; */
+    /*
+        background-position-x: center;
+        background-postion-y: top;
+    */
+    /* background: black url("./img/tree.webp") no-repeat; */
+}
+
+.main-container {
+    border-width: 3px;
+    border-style: solid;   
+    border-color: cadetblue;
+
+    border-top-color: chartreuse;
+    border-bottom-width: 1px;
+    border-left-style: dashed;
+    /* border-right-color: blue; */
+    border-radius: 10%;
+    /* border: 3px solid cadetblue; */
+
+    /* padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px; */
+
+    /* padding: 5px 5px 5px 5px; */
+    padding: 5px 10px;
+    padding: 10px;
+}
+
+.second-container {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 6px;
+}
+
+div.second-container div.mr-b {
+    margin-bottom: 5px;
+    border: 1px solid brown;
+    width: 50%;
+    height: 50px;
+    min-width: 100px;
+}
+
+div.second-container div.mr-t {
+    margin-top: 5px;
+    border: 1px solid brown;
+}
+
+.mr-r {
+    margin-right: 10px;
+}
+
+.mr-l {
+    margin-left: 10px;
+}
+
+.text-styles {
+    color: blue;
+    text-align: center; /* left right start end justify */
+    text-decoration: underline; /* line-through overline */
+    text-transform: capitalize; /* uppercase lowercase */
+    text-indent: 30px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    direction: ltr; /* rtl */
+    word-spacing: 5px;
+    text-shadow: 7px 5px 13px black; /* X Y BLUR COLOR */
+    font-family: 'Arial', 'Times New Roman', 'sans-serif';
+    font-weight: 600;
+    font-size: 15px;
+    font-variant: unicase;
+}
