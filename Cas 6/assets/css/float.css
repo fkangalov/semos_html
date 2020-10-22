@@ -1,0 +1,41 @@
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.box-1 {
+    background-color: red;
+}
+
+.box-2 {
+    background-color: blue;
+}
+
+.box-3 {
+    background-color: yellow;
+}
+
+.box-4 {
+    background-color: green;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.clear-right {
+    clear: right;
+}
+
+.clearfix {
+    clear: both;
+}

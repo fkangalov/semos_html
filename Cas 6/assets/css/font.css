@@ -1,0 +1,20 @@
+@font-face {
+    font-family: TurretRoad;
+    src: url("../fonts/TurretRoad-Regular.ttf");
+}
+
+.font-ext {
+    font-family: TurretRoad;
+}
+
+.block-cont {
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    width: 50%;
+}
+
+.inline-cont {
+    display: inline-block;
+}
