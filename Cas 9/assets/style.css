@@ -1,0 +1,42 @@
+.flex-cont {
+    display: flex;
+    border: 1px solid black;
+    background-color: darkorange;
+    padding: 2px;
+    flex-direction: row;
+}
+
+.flex-item {
+    flex: 1;
+    background-color: deeppink;
+    border: 1px solid yellow;
+    margin: 2px;
+}
+
+/* Maximum do 600px sirina (od 0 do 600) */
+@media only screen and (max-width: 600px) {
+
+    .flex-cont {
+        flex-direction: column;
+    }
+
+    .flex-item {
+        border: unset;
+        margin: 10px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+
+    .flex-cont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .flex-item {
+        flex: unset;
+    }    
+
+}

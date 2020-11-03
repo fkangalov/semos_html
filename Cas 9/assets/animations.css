@@ -1,0 +1,73 @@
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    
+    /* transition-property: background-color; */
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.square:hover {
+    background-color: orange;
+    width: 300px;
+}
+
+.cont {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transition: transform 500ms ease-in;
+}
+
+.cont:hover {
+    transform: rotateZ(180deg);
+    /* transform: translate(10px, 10px); */
+    /* transform: skew(10deg, 10deg); */
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+}
+
+.gallery img {
+    width: 33%;
+    transition: filter 500ms ease-in-out;
+}
+
+.gallery img:hover {
+    filter: grayscale(100%);
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: magenta;
+    border-radius: 50%;
+    text-align: center;
+
+    animation-name: mojaAnimacija;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    /* animation-iteration-count: infinite; */
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /* animation-direction: alternate; */
+
+}
+
+@keyframes mojaAnimacija {
+    from {
+        transform: rotate(0deg);
+        margin-left: 0px;
+    }
+    to {
+        transform: rotate(360deg);
+        margin-left: 500px;
+        background-color: blue;
+    }
+}
